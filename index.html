@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!-- -->
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Split PDF into Colour and Black&White PDFs</title>
+</head>
+
+<body>
+
+<h1>Split PDF into Colour and Black&White PDFs</h1>
+
+<p>Separate Colour pages and Black&White pages and creates independent PDF files.</p>
+
+<div class="upload-box" id="uploadBox">
+  <p id="uploadText">Drag and drop a PDF file here or click to select a file</p>
+  <input type="file" id="fileInput" accept="application/pdf">
+</div>
+
+<div id="loadingModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding-top: 20%;">
+  <h2>Please wait...</h2>
+  <p>Processing your PDF file.</p>
+</div>
+
+<button id="Split">Split & Download</button>
+
+<h2 style="padding-top: 40px;">Move Page</h2>
+<label for="MovePageFrom">Move Page from</label>
+<select id="MovePageFrom">
+  <option value="1to2">Colour pdf to Black&White pdf</option>
+  <option value="2to1">Black&White pdf to Colour pdf</option>
+</select>
+
+<br>
+<label for="pageNumber" style="padding-top: 10px;">Enter page number:</label>
+<input type="text" id="pageNumber" placeholder="e.g., 0,2 or 1-3" style="margin-top: 10px;">
+<br>
+<button id="Regenerate" style="margin-top: 10px;">Regenerate & Download</button>
+
+
+<div id="footer">
+  Created by C R Subramani 
+  <a href="https://www.linkedin.com/in/subramani777" target="_blank" rel="noopener noreferrer">
+    [LinkedIn]
+  </a>
+</div>
+
+<div id="note">
+  Note: Use Google chorme browser for better experience.
+</div>
+
+<script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+<!--
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split PDF into Colour and Black&White PDFs</title>
+  <style>
+      body {
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center; /* Center vertically */
+          height: 100vh; /* Full height of the viewport */
+          margin: 0; /* Remove default margin */
+          font-family: Arial, sans-serif; /* Optional: Set a font */
+      }
+      
+  </style>
+</head>
+<body>
+  <div>
+    Contact C R Subramani[Email ID: subramanicr777@gmail.com] <br>
+    For Split PDF into Colour and Black&White PDFs Application
+  </div>
+
+<body>
+
+ -->
+</html>
